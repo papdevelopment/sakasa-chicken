@@ -10,12 +10,12 @@
 Setup;
 
 1;
-ensure sakasa-chicken
-ensure qb-target
-ensure-nh-keyboard
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 We have finished step 1 of the process by assigning the start file to server.cfg or script.cfg,
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* ensure sakasa-chicken
+* ensure qb-target
+* ensure-nh-keyboard
 
 
 2;
@@ -48,11 +48,13 @@ That's all for installation.
 Kurulum;
 
 1;
-ensure sakasa-chicken
-ensure qb-target
-ensure-nh-keyboard
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 server.cfg veya script.cfg'ye dosyayı başlatlarını atayarak işlemin 1. adımını bitirmiş bulunmaktayız,
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* ensure sakasa-chicken
+* ensure qb-target
+* ensure-nh-keyboard
+
 
 2;
 qb-core\shared\items.lua'ya aşağıdakileri ekleyiniz;
@@ -70,8 +72,12 @@ qb-inventory\html\images adresine ekleyiniz,
 lj-inventory\html\images adresine ekleyiniz.
 
 
+Gerekli Scriptler
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* [nh-keyboard](https://github.com/nerohiro/nh-keyboard); 
+* [qb-target](https://github.com/qbcore-framework/qb-target). 
 
-<strong>Kurulum bu kadar kolay gelsin.</strong>
+# Kurulum bu kadar kolay gelsin.
 
 
 ![sakasatr com](https://github.com/papdevelopment/qb-portak/assets/127118520/67696232-ef5a-4205-8d35-cb37fb4b6aa8)
