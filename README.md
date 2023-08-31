@@ -4,8 +4,15 @@
 
 [Resource Preview] [https://youtube.com/watch?v=XtaP88IJwEg&t=2s](https://www.youtube.com/watch?v=7an_WcvthB0&t=9s)
 
+Gerekli Scriptler/Required Scripts
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* [nh-keyboard](https://github.com/nerohiro/nh-keyboard)
+* [qb-target](https://github.com/qbcore-framework/qb-target) 
+* [qb-core](https://github.com/qbcore-framework/qb-core) 
+
 <strong>[EN]</strong>
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 Setup;
 
@@ -72,10 +79,6 @@ qb-inventory\html\images adresine ekleyiniz,
 lj-inventory\html\images adresine ekleyiniz.
 
 
-Gerekli Scriptler
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-* [nh-keyboard](https://github.com/nerohiro/nh-keyboard); 
-* [qb-target](https://github.com/qbcore-framework/qb-target). 
 
 # Kurulum bu kadar kolay gelsin.
 
