@@ -10,6 +10,7 @@ Gerekli Scriptler/Required Scripts
 * [qb-target](https://github.com/qbcore-framework/qb-target) 
 * [qb-core](https://github.com/qbcore-framework/qb-core) 
 * [ik-joblimit](https://github.com/i-kulgu/ik-joblimit) 
+* [cron](https://github.com/i-kulgu/cron) 
 
 <strong>[EN]</strong>
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
