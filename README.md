@@ -9,6 +9,7 @@ Gerekli Scriptler/Required Scripts
 * [nh-keyboard](https://github.com/nerohiro/nh-keyboard)
 * [qb-target](https://github.com/qbcore-framework/qb-target) 
 * [qb-core](https://github.com/qbcore-framework/qb-core) 
+* [ik-joblimit](https://github.com/i-kulgu/ik-joblimit) 
 
 <strong>[EN]</strong>
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
