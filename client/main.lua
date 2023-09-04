@@ -1,5 +1,66 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 
+for k, v in pairs(Config.ravzsat) do
+    exports['qb-target']:AddCircleZone("ravz-"..k, vector3(v.konum.x, v.konum.y, v.konum.z), 1.5, {
+        name = "ravz-"..k,
+        debugPoly = false,
+    }, {
+        options = {
+            {
+                type = "client",
+                event = "ravz:tavuk-sat:main",
+                icon = "fas fa-dungeon",
+                label = v.isim,
+                args = v.icerik,
+            },
+        },
+        distance = 2.0
+    })
+end
+
+
+
+
+RegisterNetEvent("ravz:tavuk-sat:main", function(data)
+    icerik = data.args
+    contextdata = {
+        {header = data.label, isMenuHeader = true, icon = "fas fa-person"}
+    }
+    for k, v in pairs(icerik) do
+        
+        table.insert(contextdata, {header = v.label, txt = v.fiyat .. " (Adet)", icon = "fas fa-right-to-bracket", params = { 
+            event = "ravz-tavuk-sat:client:openDialog",
+            args =  {
+                item = v.item,
+                fiyat = v.fiyat,
+            },
+        }})
+
+    end
+
+    exports["qb-menu"]:openMenu(contextdata)
+end)
+
+RegisterNetEvent("ravz-tavuk-sat:client:openDialog", function(data)
+    fiyat = data.fiyat
+    item = data.item
+
+    
+    
+    local keyboard, miktar3 = exports["nh-keyboard"]:Keyboard({
+		header = "Ne kadar Satıcaksın?",
+		rows = {"Miktar"}
+	})
+	if keyboard then
+        miktar3 = tonumber(miktar3)
+        if miktar3 == nil or miktar3 <= 0  then
+            QBCore.Functions.Notify("Hatalı değer.", "error")
+        else
+            TriggerServerEvent("qb-pirates:tavuksat", item, miktar3, fiyat)
+        end
+    end
+    
+end)
 
 
 
@@ -253,6 +314,7 @@ RegisterNetEvent("qb-pirates:tavukyakala-prog", function()
         end
     end)
 end)
+
 
 
 
