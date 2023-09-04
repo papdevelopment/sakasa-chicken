@@ -85,6 +85,6 @@ AddEventHandler("qb-pirates:tavukyakala", function()
     AddEventHandler('onResourceStart', function(resource)
         if resource == GetCurrentResourceName() then
             Citizen.Wait(5000)
-            print('[^2sakasa-chicken^0] - ^1Started Version-1.5^0')
+            print('[^2sakasa-chicken^0] - ^1Started Version-2^0')
         end
     end)
